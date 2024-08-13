@@ -39,12 +39,3 @@ This project contains a simple Go function `ParseName` that splits a full name i
 The fuzz test will run for 30 seconds (as specified by `-fuzztime=30s`). It will output information about the fuzzing process, including any failing cases it finds.
 
 A successful fuzz test often results in a failure, as it identifies inputs that cause unexpected behavior. In this project, the fuzzer identifies that a single space input (" ") causes the `ParseName` function to return empty strings without an error, which is caught by our test assertions.
-
-## Next Steps
-
-- Analyze the failing cases identified by the fuzzer
-- Modify the `ParseName` function to handle edge cases
-- Expand the fuzz test to cover more scenarios
-
-
-
