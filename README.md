@@ -20,12 +20,16 @@ This project contains a simple Go function `ParseName` that splits a full name i
 
 ## Running the Fuzz Test
 
-1. Build the Docker image:
+1. Run this before making the docker image
+   ```
+   go mod init fuzz-example
+   ```
+2. Build the Docker image:
    ```
    docker build -t fuzz-test .
    ```
 
-2. Run the fuzz test:
+4. Run the fuzz test:
    ```
    docker run --rm -it fuzz-test go test -fuzz=FuzzParseName -fuzztime=30s
    ```
