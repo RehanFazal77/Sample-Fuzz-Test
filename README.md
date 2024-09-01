@@ -15,7 +15,7 @@ This project contains a simple Go function `ParseName` that splits a full name i
 
 ## Prerequisites
 
-- Go 1.18 or later
+- Go 1.18, later
 - Docker
 
 ## Running the Fuzz Test
